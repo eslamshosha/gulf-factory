@@ -1388,13 +1388,13 @@ a.social-link:hover {
 
 @media (max-width: 991px) {
   .nav-header .img-logo img {
-    max-width: 69px;
-  }
-  .logo-sm img {
     max-width: 59px;
   }
+  .logo-sm img {
+    max-width: 49px;
+  }
   .nav-header {
-    padding: 15px 0;
+    padding: 10px 0;
   }
   .contact-link {
     width: 130px;
@@ -1419,7 +1419,10 @@ a.social-link:hover {
   .nav-head {
     display: flex;
     justify-content: flex-start;
-    padding: 15px 0;
+    padding: 25px 0 10px;
+  }
+  .fixed-nav .nav-head {
+    padding: 18px 0 10px;
   }
   .nav-head .dropdown-content {
     background-color: transparent;
