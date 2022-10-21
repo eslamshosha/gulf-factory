@@ -1179,11 +1179,13 @@ footer {
   margin-bottom: 30px;
   text-align: start;
 }
-.nav-wrap {
-  display: flex;
-  flex-direction: column;
-  max-height: 100px;
-  flex-wrap: wrap;
+@media (min-width: 991px) {
+  .nav-wrap {
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    flex-wrap: wrap;
+  }
 }
 .nav-foot li {
   margin-bottom: 8px;
@@ -1324,6 +1326,48 @@ a.social-link:hover {
   margin-inline-start: 5px;
   image-rendering: -webkit-optimize-contrast;
 }
+/*                             footer accordion                 */
+.footer-accordion.nav-foot-header {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  padding: 0 15px;
+}
+.news-letter .footer-panel {
+  padding: 0;
+}
+.footer-accordion:after {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  font-size: 13px;
+  transition: all 0.5s ease-out;
+}
+html[dir="rtl"] .footer-accordion:after {
+  content: "";
+}
+.footer-accordion.active:after {
+  transform: rotate(90deg);
+}
+html[dir="rtl"] .footer-accordion.active:after {
+  transform: rotate(-90deg);
+}
+/*                             footer accordion                 */
 @media (max-width: 991px) {
   .footer-contact {
     grid-template-columns: repeat(1, 1fr);
@@ -1353,14 +1397,11 @@ a.social-link:hover {
     font-size: 20px;
   }
   .nav-foot-cont {
-    text-align: center;
+    text-align: start;
+    margin-bottom: 35px;
   }
   .nav-foot-header {
     text-align: center;
-  }
-  .nav-foot {
-    flex-direction: column;
-    margin-bottom: 30px;
   }
   .nav-foot li {
     margin: 0 0 10px;
