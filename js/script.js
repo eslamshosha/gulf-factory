@@ -119,7 +119,7 @@ $(document).ready(function () {
   ////////////** footer transfer into accordion **//////////
 
   if ($(window).width() <= 767) {
-    $(".nav-accordion").addClass("footer-accordion");
+    $(".nav-foot-header").addClass("footer-accordion");
     $(".nav-foot").addClass("footer-panel");
   }
   $(".footer-accordion").click(function () {

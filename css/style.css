@@ -511,12 +511,14 @@ header {
     min-height: 250px;
   }
   .caption-title {
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .caption-pargh {
     font-size: 14px;
     margin-bottom: 15px;
     padding: 0 20px;
+    display: none;
   }
   .caption-link {
     width: 130px;
@@ -746,7 +748,7 @@ header {
   visibility: hidden;
 }
 .services-ancor:hover .services-img::before {
-  opacity: 0.6;
+  opacity: 0.7;
   visibility: visible;
 }
 .services-ancor:hover .services-img img {
@@ -874,7 +876,7 @@ header {
   right: 0;
   bottom: 0;
   border-radius: 25px;
-  background: var(--main-color);
+  background: var(--white-color);
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -889,9 +891,9 @@ header {
   transform: scale(1);
 }
 .work-link:hover {
-  color: var(--white-color);
+  color: #8f6076;
   text-decoration: none;
-  border-color: var(--main-color);
+  border-color: transparent;
 }
 @media (max-width: 767px) {
   .work-section {
@@ -1103,7 +1105,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 60px;
   margin-bottom: 70px;
 }
@@ -1383,7 +1385,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .social {
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .contact-ancor i {
     width: 45px;
@@ -1398,7 +1400,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   }
   .nav-foot-cont {
     text-align: start;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
   .nav-foot-header {
     text-align: center;
@@ -1413,7 +1415,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     text-align: center;
   }
   .copy-flex {
-    padding-top: 40px;
+    padding-top: 30px;
     justify-content: center;
     flex-direction: column;
   }
@@ -1535,6 +1537,7 @@ html[dir="rtl"] .footer-accordion.active:after {
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    font-size: 20px;
   }
   /*                    menu in phone size                      */
 }
